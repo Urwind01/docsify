@@ -1,12 +1,17 @@
-![logo](_media/icon.svg)
 
-# GitLab CI/CD
+# Git
+![](_media/logo.png)
 
-> 用于GitLab下的项目文档查询更新.
+> 用于文档查询更新.
 
-* 项目文档
+* 文档
 
-[GitLab](http://gitLab.geovisweb.cn)
+[Baidu](http://www.baidu.com)
 [Get Started](/post/)
+
+<!-- ![logo](_media/icon.svg) -->
+![](_media/background.jpg)
+
+![color](#f0f0f0)
 
 

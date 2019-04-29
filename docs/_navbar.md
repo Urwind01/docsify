@@ -1,2 +1,2 @@
 * [首页](/)
-* [关于](zh-cn/about)
+* [关于](/other/about.md)
