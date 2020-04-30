@@ -1,13 +1,12 @@
-![logo](_media/icon.svg)
+![logo](_media/pig.svg)
 
-# Git
+# 养猪场的日常
 
-> 用于文档查询更新.
+> 用于记录养猪的枯燥生活.
 
-* 文档
 
-[Baidu](http://www.baidu.com)
-[Get Started](/post/)
+[百度一下](http://www.baidu.com)
+[开始养猪](/post/)
 
 
 
