@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- <script src="./vue.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">{{a}}</div> 
+    <div id="app-2">
+            <span v-bind:title="message">
+              鼠标悬停几秒钟查看此处动态绑定的提示信息！
+            </span>
+          </div>
+    <script>
+        var data={a:1}
+        var app= new Vue({
+            el:"#app", //元素 使用id选择器进行选中 文本插值
+            data:data
+        })
+
+
+       app.$watch("a",function(newVal, oldVal){
+           console.log(newVal, oldVal)
+       })
+
+      var app2 = new Vue({
+        el: '#app-2',
+        data: {
+            message: '页面加载于 ' + new Date().toLocaleString()
+        }
+        })
+    </script>
+    
+</body>
+</html>
