@@ -74,4 +74,33 @@ css盒模型，又称框模型，包含了元素内容(content)，内边距(padd
 - 块级元素：div ul ol li dl dt dd h1-h6 p
 - 空元素：没有内容的HTML元素，空元素无闭合，常见br hr img input link meta
 
-13. web worker
+13. HTML5有哪些更新
+
+- 语义化标签：header,nav,footer,article,section,aside
+- 媒体标签：audio video source；audio包括controls控制面板，autoplay自动播放，loop循环播放；poster：指定视频还未下载完毕或未播放,width,height;source:兼容不同的浏览器
+- 表单：
+- 类型：email验证当前输入的邮箱是否合法，url验证url,number只能输入数字，自带上下箭头，search:输入框提供小×，range提供一个范围，color颜色选择器，time时分秒，data日期选择年月日，datatime:safari，datatime-loacl:日期时间控件，week周控件，month月控件
+- 表单属性：placeholder提示信息、autofocus自动获取焦点、autocomplete表单必须提交过且有name属性，requried输入框不嫩为空且有值才能提交，pattern里写入想要的正则模式，multiple选择多个文件或邮箱，form=“form表单的id"
+- 表单事件：oninput\onivalid
+- 进度条，度量器：progress标签，用来表示任务的进度
+- DOM查询操作：document.querySelector().document.qurerySelecterAll(),选择的对象可以是标签、类、Id
+- Web存储：新增在客户端存数据的方法：localStorage无时间限制的数据存储，sessionStorage 针对一个session的数据存储
+- 其他：
+- 拖放，img draggble
+- 画布，canvas,使用js在网页上绘制图像。画布是矩形区域，可以控制每一像素。拥有多种绘制路径、矩形、圆形、字符、图像的方法。
+- svg:是可伸缩矢量图形，用于定义网络基于矢量的图形，使用xml格式定义图形，在放大或改变尺寸时，不会损失图形质量
+- 地理定位：Geolication
+https://juejin.cn/post/6905294475539513352
+14. img的srcset属性的作用
+
+- 响应式页面中经常用到根据屏幕密度来设置不同的图片，这就用到了img标签的srcset属性，用于设置不同屏幕密度下，img自动加载不同的图片
+```html
+<img src="image-128.png" srcset="image-256.png 2x" />
+```
+- 当屏幕密度为1x情况加载image1 2x加载2，当前屏幕密度有1-4x四种，通过sizes来设置图片的尺寸零界点。
+
+15.说一下web worker
+
+- 在html页面中，如果执行脚本时，负面的状态是不相应的，直到脚本执行完成后，页面才变成可响应。web worker是运行在后台的js,独立于其他脚本，不会影响页面性能，通过pOstMessage将结果回传到主线程，在进行复杂操作时，不阻塞主线程
+- 创建:检查当前浏览器是否支持，创建web worker文件，创建web worker对象
+
